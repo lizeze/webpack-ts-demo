@@ -1,5 +1,5 @@
 import "./index.css";
-import img from "../img/start.png";
+import img from  "./index.png"
 let el: HTMLDivElement = document.createElement("div");
 el.classList.add("hello");
 el.innerHTML = "webpack and ts";
