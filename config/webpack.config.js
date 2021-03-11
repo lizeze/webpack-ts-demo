@@ -1,9 +1,7 @@
 const path = require('path')
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 module.exports = {
-    mode: "development",
-    devtool: 'eval-source-map',
-    entry: './src/index.ts',
+    entry: '/src/index.ts',
     module: {
         rules: [{
             test: /\.tsx?$/,
@@ -29,10 +27,10 @@ module.exports = {
         }),
     ],
     output: {
-        path: path.resolve(__dirname, 'dist'),
+        path: path.resolve(__dirname, '../dist'),
         filename: '[name]_[hash].js',
     },
     devServer: {
-        contentBase: './dist',
+        contentBase: '../dist',
     },
 };
